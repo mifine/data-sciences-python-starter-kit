@@ -1,5 +1,33 @@
 # Python Data Sciences starter kit
 
+## Installation
+
+1. Create a repository on a web hosting for version control or your own server
+
+2. Clone the repository with the name of your project
+```
+git clone -o boilerplate -b master --single-branch git@github.com:florentpietot/data-sciences-python-starter-kit.git Project
+cd Project
+```
+3. Update LICENSE.md and README.md
+4. Setup new origin (change username and project name)
+```
+git remote add origin git@github.com:username/project.git
+git push -u origin master
+```
+
+If you want to integrate new changes from starter kit into your project
+Warning: this might create merge conflicts
+```
+git fetch boilerplate
+git merge boilerplate/master
+```
+Otherwise, if you don't intend to get new changes from boilerplate,
+just delete the remote
+```
+git remote rm boilerplate
+```
+
 ## Usage
 * **cache**: cache your features and datasets here
 * **input**: place the raw data files here
